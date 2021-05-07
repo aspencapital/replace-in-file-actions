@@ -1,11 +1,16 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
+name: 'replace-in-file-action'
+description: 'Replaces a string in a file'
+author: 'Nicholas Pate (Aspen Capital)'
 inputs:
-  milliseconds: # change this
+  FROM:
     required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+    description: 'from value'
+  TO:
+    required: true
+    description: 'to value'
+  FILES:
+    required: true
+    description: 'files to replace'
 runs:
   using: 'node12'
-  main: 'dist/index.js'
+  main: 'dist/main.js'

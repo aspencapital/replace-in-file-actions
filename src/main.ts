@@ -1,19 +1,22 @@
-import * as core from '@actions/core'
-import {wait} from './wait'
+import { getInput, setFailed } from '@actions/core';
+import replace from 'replace-in-file';
 
 async function run(): Promise<void> {
   try {
-    const ms: string = core.getInput('milliseconds')
-    core.debug(`Waiting ${ms} milliseconds ...`) // debug is only output if you set the secret `ACTIONS_RUNNER_DEBUG` to true
+    const from: string = getInput('FROM');
+    const to: string = getInput('TO');
+    const files: string = getInput('FILES');
 
-    core.debug(new Date().toTimeString())
-    await wait(parseInt(ms, 10))
-    core.debug(new Date().toTimeString())
+    const options = {
+      files,
+      from,
+      to,
+    };
 
-    core.setOutput('time', new Date().toTimeString())
+    replace.sync(options);
   } catch (error) {
-    core.setFailed(error.message)
+    setFailed(error.message);
   }
 }
 
-run()
+run();
