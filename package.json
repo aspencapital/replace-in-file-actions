@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "TypeScript template action",
-  "main": "dist/index.js",
+  "main": "dist/main.js",
   "scripts": {
-    "package": "ncc build --source-map"
+    "build": "tsc",
+    "package": "ncc build src/main.js -o dist/main.js"
   },
   "repository": {
     "type": "git",
