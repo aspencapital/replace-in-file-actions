@@ -6201,7 +6201,7 @@ function wrappy (fn, cb) {
 
 /***/ }),
 
-/***/ 713:
+/***/ 399:
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -6217,6 +6217,7 @@ async function run() {
         const from = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('FROM');
         const to = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('TO');
         const files = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('FILES');
+        console.log(from, to, files);
         const options = {
             files,
             from,
@@ -6229,7 +6230,7 @@ async function run() {
     }
 }
 run();
-//# sourceMappingURL=main.js.map
+
 
 /***/ }),
 
@@ -6379,6 +6380,6 @@ module.exports = require("util");;
 /******/ 	// module exports must be returned from runtime so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(713);
+/******/ 	return __webpack_require__(399);
 /******/ })()
 ;

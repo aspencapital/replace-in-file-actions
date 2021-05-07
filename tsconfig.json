@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "incremental": true,
     "moduleResolution": "node",
     "noFallthroughCasesInSwitch": false,
     "noImplicitAny": true,
@@ -10,12 +9,11 @@
     "noUnusedLocals": false,
     "noUnusedParameters": false,
     "removeComments": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "strict": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": false,
     "target": "ES2018",
-    "watch": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,

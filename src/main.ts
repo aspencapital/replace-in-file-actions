@@ -7,6 +7,9 @@ async function run(): Promise<void> {
     const to: string = getInput('TO');
     const files: string = getInput('FILES');
 
+    // eslint-disable-next-line no-console
+    console.log(from, to, files);
+
     const options = {
       files,
       from,
