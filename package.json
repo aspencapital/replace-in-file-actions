@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
-    "package": "ncc build src/main.js -o dist/index.js"
+    "package": "ncc build src/main.js"
   },
   "repository": {
     "type": "git",
