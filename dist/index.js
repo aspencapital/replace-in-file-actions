@@ -6223,7 +6223,8 @@ async function run() {
             from,
             to,
         };
-        replace_in_file__WEBPACK_IMPORTED_MODULE_1___default().sync(options);
+        const results = replace_in_file__WEBPACK_IMPORTED_MODULE_1___default().sync(options);
+        console.log(results);
     }
     catch (error) {
         (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed)(error.message);

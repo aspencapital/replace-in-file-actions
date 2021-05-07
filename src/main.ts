@@ -16,7 +16,10 @@ async function run(): Promise<void> {
       to,
     };
 
-    replace.sync(options);
+    const results = replace.sync(options);
+
+    // eslint-disable-next-line no-console
+    console.log(results);
   } catch (error) {
     setFailed(error.message);
   }
