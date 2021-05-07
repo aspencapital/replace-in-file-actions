@@ -1,12 +1,11 @@
 {
   "name": "typescript-action",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "TypeScript template action",
-  "main": "dist/main.js",
+  "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "package": "ncc build src/main.js -o dist/main.js"
+    "package": "ncc build --source-map"
   },
   "repository": {
     "type": "git",
