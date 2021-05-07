@@ -6217,14 +6217,12 @@ async function run() {
         const from = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('FROM');
         const to = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('TO');
         const files = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('FILES');
-        console.log(from, to, files);
         const options = {
             files,
             from,
             to,
         };
-        const results = replace_in_file__WEBPACK_IMPORTED_MODULE_1___default().sync(options);
-        console.log(results);
+        replace_in_file__WEBPACK_IMPORTED_MODULE_1___default().sync(options);
     }
     catch (error) {
         (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed)(error.message);
