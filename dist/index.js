@@ -6217,9 +6217,6 @@ async function run() {
         const from = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('FROM');
         const to = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('TO');
         const files = (0,_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput)('FILES');
-        console.log(process.env);
-        console.log(process.cwd());
-        console.log(__dirname);
         const options = {
             files,
             from,
