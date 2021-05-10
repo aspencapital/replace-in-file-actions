@@ -7,6 +7,13 @@ async function run(): Promise<void> {
     const to: string = getInput('TO');
     const files: string = getInput('FILES');
 
+    // eslint-disable-next-line no-console
+    console.log(process.env);
+    // eslint-disable-next-line no-console
+    console.log(process.cwd());
+    // eslint-disable-next-line no-console
+    console.log(__dirname);
+
     const options = {
       files,
       from,
