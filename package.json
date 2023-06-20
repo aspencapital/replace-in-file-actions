@@ -21,7 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "@actions/core": "^1.2.6",
-    "replace-in-file": "^6.2.0"
+    "replace-in-file": "^6.3.5"
   },
   "devDependencies": {
     "@types/jest": "^26.0.15",
